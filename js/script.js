@@ -294,8 +294,8 @@ function gecmis_siparisler() {
 	document.getElementById("tarih_id" + run_number + "").innerText= localStorage.getItem("emin_tarih" + run_number + "");
 	document.getElementById("aciklama_id" + run_number + "").innerText= localStorage.getItem("emin_aciklama" + run_number + "");
 	document.getElementById("adres_id" + run_number + "").innerText= localStorage.getItem("emin_adres" + run_number + "");
-	document.getElementById("fiyat_id" + run_number + "").innerText= Math.floor(localStorage.getItem("emin_fiyat" + run_number + ""));
-	document.getElementById("gider_id" + run_number + "").innerText= "-" +  Math.floor(localStorage.getItem("siparis_gider_" + run_number + ""));
+	document.getElementById("fiyat_id" + run_number + "").innerText= Math.floor(localStorage.getItem("emin_fiyat" + run_number + "")).toLocaleString("en-US");
+	document.getElementById("gider_id" + run_number + "").innerText= "-" +  Math.floor(localStorage.getItem("emin_siparis_gider_" + run_number + "")).toLocaleString("en-US");
 	
 	document.getElementById("siparis_edit_id" + run_number + "").style.display= "none";
 	document.getElementById("siparis_onay_id" + run_number + "").style.display= "none";
@@ -319,10 +319,10 @@ function sezonlar() {
 
 function sezon() {
 	
-	document.getElementById("sezon_gelir").innerText= Math.floor(localStorage.getItem("emin_sezonlar_top_gelir")) + " ₺";
-	document.getElementById("sezon_gider").innerText= "-" + Math.floor(localStorage.getItem("emin_sezonlar_top_gider")) + " ₺";
+	document.getElementById("sezon_gelir").innerText= Math.floor(localStorage.getItem("emin_sezonlar_top_gelir")).toLocaleString("en-US") + " ₺";
+	document.getElementById("sezon_gider").innerText= "-" + Math.floor(localStorage.getItem("emin_sezonlar_top_gider")).toLocaleString("en-US") + " ₺";
 	document.getElementById("sezon_is").innerText= Math.floor(localStorage.getItem("emin_sezonlar_top_is"));
-	document.getElementById("sezon_kar").innerText= Math.floor(localStorage.getItem("emin_sezonlar_top_kar")) + " ₺";
+	document.getElementById("sezon_kar").innerText= Math.floor(localStorage.getItem("emin_sezonlar_top_kar")).toLocaleString("en-US") + " ₺";
 	document.getElementById("tasks_div").innerHTML= localStorage.getItem("emin_new_gecmis_sezon");
 	document.getElementById("sezon_title").innerText= localStorage.getItem("emin_sezon_title");
 	
@@ -345,8 +345,8 @@ function sezon() {
 	document.getElementById("tarih_id" + run_number + "").innerText= localStorage.getItem("emin_tarih" + run_number + "");
 	document.getElementById("aciklama_id" + run_number + "").innerText= localStorage.getItem("emin_aciklama" + run_number + "");
 	document.getElementById("adres_id" + run_number + "").innerText= localStorage.getItem("emin_adres" + run_number + "");
-	document.getElementById("fiyat_id" + run_number + "").innerText= Math.floor(localStorage.getItem("emin_fiyat" + run_number + ""));
-	document.getElementById("gider_id" + run_number + "").innerText= "-" +  Math.floor(localStorage.getItem("siparis_gider_" + run_number + ""));
+	document.getElementById("fiyat_id" + run_number + "").innerText= Math.floor(localStorage.getItem("emin_fiyat" + run_number + "")).toLocaleString("en-US");
+	document.getElementById("gider_id" + run_number + "").innerText= "-" +  Math.floor(localStorage.getItem("emin_siparis_gider_" + run_number + "")).toLocaleString("en-US");
 	
 	document.getElementById("siparis_edit_id" + run_number + "").style.display= "none";
 	document.getElementById("siparis_onay_id" + run_number + "").style.display= "none";
@@ -396,7 +396,7 @@ function save() {
 	document.getElementById("tarih_id" + run_number + "").innerText= localStorage.getItem("emin_tarih" + run_number + "");
 	document.getElementById("aciklama_id" + run_number + "").innerText= localStorage.getItem("emin_aciklama" + run_number + "");
 	document.getElementById("adres_id" + run_number + "").innerText= localStorage.getItem("emin_adres" + run_number + "");
-	document.getElementById("fiyat_id" + run_number + "").innerText= Math.floor(localStorage.getItem("emin_fiyat" + run_number + ""));
+	document.getElementById("fiyat_id" + run_number + "").innerText= Math.floor(localStorage.getItem("emin_fiyat" + run_number + "")).toLocaleString("en-US");
 	
 	document.getElementById("tasktitle_id" + run_number + "").style.display= localStorage.getItem("emin_s_display" + run_number + "");
 	document.getElementById("siparis_durum_id" + run_number + "").style.display= localStorage.getItem("emin_s_display" + run_number + "");
