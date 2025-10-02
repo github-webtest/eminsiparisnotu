@@ -43,7 +43,7 @@ function close_sezon() {
 	localStorage.setItem("emin_sezon_toplam_gider_" + new_id2 + "", localStorage.getItem("emin_sezon_toplam_gider"));
 	localStorage.setItem("emin_sezon_toplam_is_" + new_id2 + "", localStorage.getItem("emin_sezon_toplam_is"));
 	
-	var sezon_divss = '<div class="sezonlar_divs" onclick="localStorage.setItem(' + fff + 'emin_sezonlar_top_gelir' + fff + ', localStorage.getItem(' + fff + 'emin_sezon_toplam_gelir_' + new_id2 + '' + fff + ')); localStorage.setItem(' + fff + 'emin_sezonlar_top_gider' + fff + ', localStorage.getItem(' + fff + 'emin_sezon_toplam_gider_' + new_id2 + '' + fff + ')); localStorage.setItem(' + fff + 'emin_sezonlar_top_is' + fff + ', localStorage.getItem(' + fff + 'emin_sezon_toplam_is_' + new_id2 + '' + fff + ')); localStorage.setItem(' + fff + 'emin_sezonlar_top_kar' + fff + ', Math.floor(localStorage.getItem(' + fff + 'emin_sezonlar_top_gelir' + fff + ') - localStorage.getItem(' + fff + 'emin_sezonlar_top_gider' + fff + '))); localStorage.setItem(' + fff + 'emin_sezon_title' + fff + ', ' + sezon_yili + '); localStorage.setItem(' + fff + 'emin_new_gecmis_sezon' + fff + ', localStorage.getItem(' + fff + 'emin_new_gecmis_sezon_' + new_id2 + '' + fff + ')); location.href=' + fff + 'sezon.html' + fff + ';"><b id="sezon_years_id' + new_id2 + '"></b></div>';
+	var sezon_divss = '<div class="sezonlar_divs" onclick="localStorage.setItem(' + fff + 'emin_sezonlar_top_gelir' + fff + ', localStorage.getItem(' + fff + 'emin_sezon_toplam_gelir_' + new_id2 + '' + fff + ')); localStorage.setItem(' + fff + 'emin_sezonlar_top_gider' + fff + ', localStorage.getItem(' + fff + 'emin_sezon_toplam_gider_' + new_id2 + '' + fff + ')); localStorage.setItem(' + fff + 'emin_sezonlar_top_is' + fff + ', localStorage.getItem(' + fff + 'emin_sezon_toplam_is_' + new_id2 + '' + fff + ')); localStorage.setItem(' + fff + 'emin_sezonlar_top_kar' + fff + ', Math.floor(localStorage.getItem(' + fff + 'emin_sezonlar_top_gelir' + fff + ') - localStorage.getItem(' + fff + 'emin_sezonlar_top_gider' + fff + '))); localStorage.setItem(' + fff + 'emin_sezon_title' + fff + ', ' + sezon_yili_raw + '); localStorage.setItem(' + fff + 'emin_new_gecmis_sezon' + fff + ', localStorage.getItem(' + fff + 'emin_new_gecmis_sezon_' + new_id2 + '' + fff + ')); location.href=' + fff + 'sezon.html' + fff + ';"><b id="sezon_years_id' + new_id2 + '"></b></div>';
 	sezon_divss += new_sezonlar_1;
 	localStorage.setItem("emin_new_sezonlar", sezon_divss);
 	
@@ -53,7 +53,7 @@ function close_sezon() {
 	
 	location.reload();
 	
-	alert("" + sezon_yili + " Sezonu Kapatıldı");
+	alert("" + sezon_yili_raw + " Sezonu Kapatıldı");
 	} else if (document.getElementById("yes_no_input_sezon").value.length < 1) {
 		alert("Lütfen Bir Yıl Girin");
 	}
