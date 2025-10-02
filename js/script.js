@@ -309,8 +309,12 @@ function sezonlar() {
 	var run_number = Number(localStorage.getItem("emin_id_number"));
 	
 	setInterval(function option_div() {
+		
+	if (localStorage.getItem("emin_sezon_yillar" + run_number + "") != null) {
 	
 	document.getElementById("sezon_years_id" + run_number + "").innerText = localStorage.getItem("emin_sezon_yillar" + run_number + "");
+	
+	}
 	
 	run_number--;
 	
